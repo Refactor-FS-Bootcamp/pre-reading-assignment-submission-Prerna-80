@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+
+
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .header{
+            display:flex;
+            background-color: black;
+            
+            
+        }
+        h1{
+
+            padding:10px;
+            color:white;
+        }
+        ul{
+            display:flex;
+          
+        }
+        li{
+            color:white;
+            padding:10px;
+            margin:2px;
+            text-decoration: none;
+            list-style-type: none;
+        }
+        ul :hover{
+            background-color: white;
+            color:black;
+            border-radius: 5px;
+        }
+        .h-primary{
+            color:black;
+            font-size:2.5rem;
+            text-align: center;
+            justify-content: center;
+
+        }
+        .one{
+            color:gainsboro;
+            font-size:1.5rem;
+            text-align:center;
+        }
+        .center::before{
+            content: '';
+            background: url('p1.jfif') 
+                no-repeat center center/cover;
+            position: absolute;
+            opacity: 1;
+            width: 100vw;
+            height: 50vh;
+            z-index: -1;
+        }
+        .center{
+            height:300px;
+        }
+        .reflt{
+        
+            display:flex;
+            margin:30px;
+            padding:20px;
+          
+        }
+        .first{
+            height:300px;
+        }
+        .pic{
+            margin:40px;
+            justify-content: center;
+            display:block;
+            align-items: center;
+        }
+        h2{
+            font-size:2rem;
+            color:gray;
+        }
+        p{
+            font-size:1.5rem;
+            align-items: center;
+        }
+        h3{
+            text-align: center;
+            font-size:3rem;
+            color:dimgray;
+
+        }
+        .gallery{
+            border: 5px solid gray;
+            border-radius: 15px;
+            margin:10px;
+            padding:30px;
+        }
+        img{
+            
+            height: 200px;
+            padding:10px;
+        }
+        .container {
+        position: relative;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px 0 30px 0;
+        } 
+        input,
+            .btn {
+            width: 60%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            margin: 5px 0;
+            opacity: 0.85;
+            display: inline-block;
+            font-size: 17px;
+            line-height: 20px;
+            text-decoration: none; /* remove underline from anchors */
+        }
+
+         input:hover,
+              .btn:hover {
+              opacity: 1;
+              }
+              .fb {
+        background-color: #3B5998;
+        color: white;
+      }
+
+      .twitter {
+        background-color: #55ACEE;
+        color: white;
+      }
+
+      .google {
+        background-color: #dd4b39;
+        color: white;
+      }
+      input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        cursor: pointer;
+      }
+
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+      .col {
+        
+      float:left;
+        width: 650px;
+        margin: auto;
+        padding: 15px 10px;
+        margin-top: 6px;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .vl {
+        position: absolute;
+        left: 40%;
+        transform: translate(-50%);
+        border: 2px solid #ddd;
+        height: 175px;
+      }
+      .vl-innertext {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #f1f1f1;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        padding: 8px 10px;
+      }
+      .hide-md-lg {
+        display: none;
+      }
+      .bottom-container {
+        text-align: center;
+        background-color: #666;
+        border-radius: 0px 0px 4px 4px;
+      }
+      @media screen and (max-width: 650px) {
+        .col {
+          width: 100%;
+          margin-top: 0;
+        }
+
+        .vl {
+        
+          display: none;
+        }
+      
+        .hide-md-lg {
+          display: block;
+          text-align: center;
+        }
+      h3
+      {
+          text-align: center;
+          font-size:1.4rem;
+      }
+      .gallery{
+          border:2px solid red;
+          border-radius: 2px;
+          padding:15px;
+          margin:5px;
+      }
+      img{
+            
+            height: 140px;
+            padding:10px;
+        }
+        .pic{
+
+            margin:10px;
+            font-size:1rem;
+            color:rgba(26, 28, 129, 0.822);
+        }
+        .reflt{
+          flex-direction: column;
+        }
+}
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <h1>colorlib</h1>
+        <ul>
+            <li>Features</li>
+            <li>Themes</li>
+            <li>Pricing</li>
+            <li>Platform</li>
+            <li>More</li>
+            <li>login</li>
+          <li>signup</li>
+          </ul>
+      </div>
+
+        <div class="center">
+            <h1 class="h-primary">Create a photograghy portfolic with Ning</h1>
+            <p class="one">The ideal platform to create a photography websiite.
+            <button class="b1">Click Me!</button></p>
+        </div>
+        <div class="reflt">
+            <img  class="first" src="reflt.jfif">
+            <div class="pic">
+                <h2>What is photograghy?</h2>
+                <p>The word “photography” literally means “drawing with light”.
+                 The word was supposedly first coined by the British scientist Sir
+                  John Herschel in 1839 from the Greek words phos, (genitive: phōtós) meaning “light”,
+                   and graphê meaning “drawing or writing”. The technology which led to 
+                   the invention of photography essentially combines two distinct sciences: optics 
+                   – the convergence of light rays to form an image inside a camera –
+                     and chemistry, to enable that image to be captured and recorded
+                      permanently onto a photosensitive (light-sensitive) surface.</p></div>
+        </div>
+        <h3>My Gallery</h3>
+    <div class="gallery">
+        <img src="nature.jfif">
+        <img src="protait.jfif">
+        <img src="boy.jfif">
+        <img src="sports.jfif">
+        <img src="cool.jfif">
+        <img src="eeph.jfif">
+        <img src="picc.jfif">
+
+    </div>
+    <div class="container">
+        <form action="result.html">
+          <div class="row">
+            <h2 style="text-align:center">Login with Social Media or Manually</h2>
+            <div class="vl">
+              <span class="vl-innertext">or</span>
+            </div>
+            <div class="col">
+                <a href="#" class="fb btn">
+                  <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                 </a>
+                <a href="#" class="twitter btn">
+                  <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                </a>
+                <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+                  </i> Login with Google+
+                </a>
+              </div>
+              <div class="col">
+                <div class="hide-md-lg">
+                  <p>Or sign in manually:</p>
+                </div>
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit" value="Login">
+              </div>
+              
+            </div>
+          </form>
+        </div>
+        <div class="bottom-container">
+            <div class="row">
+              <div class="col">
+                <a href="#" style="color:white" class="btn">Sign up</a>
+              </div>
+              <div class="col">
+                <a href="#" style="color:white" class="btn">Forgot password?</a>
+              </div>
+            </div>
+          </div>
+</body>
+</html>
+
